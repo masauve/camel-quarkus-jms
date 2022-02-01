@@ -1,0 +1,17 @@
+apiVersion: broker.amq.io/v2alpha5
+kind: ActiveMQArtemis
+metadata:
+  name: ex-aao
+spec:
+  acceptors:
+    - name: amqp
+      port: 5672
+      protocols: amqp
+  addressSettings: {}
+  adminPassword: admin
+  adminUser: admin
+  console:
+    expose: true
+  deploymentPlan:
+    size: 1
+
